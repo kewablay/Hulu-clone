@@ -12,7 +12,7 @@ import HeaderItem from "./HeaderItem";
 
 function Header() {
   return (
-    <header className="flex flex-col items-center h-auto sm:flex-row m-5 justify-between">
+    <header className="flex flex-col items-center h-auto sm:flex-row m-3 justify-between">
       <div className="flex flex-grow justify-evenly max-w-2xl ">
         <HeaderItem title={"HOME"} Icon={HomeIcon} />
         <HeaderItem title={"TRENDING"} Icon={LightningBoltIcon} />
@@ -25,7 +25,7 @@ function Header() {
         src={Logo}
         width="100px"
         height="50px"
-        className="object-contain"
+        className="object-contain cursor-pointer"
       />
     </header>
   );

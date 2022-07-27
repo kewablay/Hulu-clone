@@ -1,7 +1,9 @@
 import Head from "next/head";
 import Header from "../components/Header";
+import Nav from "../components/Nav";
 
 export default function Home() {
+  // console.log(process.env.API_KEY);
   return (
     <div>
       <Head>
@@ -12,6 +14,7 @@ export default function Home() {
 
       {/* header  */}
       <Header />
+      <Nav />
     </div>
   );
 }
