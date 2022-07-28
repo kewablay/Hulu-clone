@@ -1,8 +1,15 @@
+import Thumbnail from "./Thumbnail";
+
 function MovieList({ results }) {
   return (
-    <div>
+    <div
+      className="px-5 py-5 sm:grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 3xl-flex justify-center flex-wrap
+    "
+    >
       {results.map((result) => (
-        <p>{result.title}</p>
+        <div>
+          <Thumbnail key={result.id} result={result} />
+        </div>
       ))}
     </div>
   );

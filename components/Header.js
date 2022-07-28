@@ -25,7 +25,7 @@ function Header() {
         src={Logo}
         width="100px"
         height="50px"
-        className="object-contain cursor-pointer"
+        className="object-contain cursor-pointer transform -translate-y-2 z-50"
       />
     </header>
   );
