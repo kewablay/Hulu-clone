@@ -9,6 +9,7 @@ import {
   UserIcon,
 } from "@heroicons/react/outline";
 import HeaderItem from "./HeaderItem";
+import Thumbnail from "./Thumbnail";
 
 function Header() {
   return (

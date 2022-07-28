@@ -2,6 +2,7 @@ import { ThumbUpIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 import { forwardRef } from "react";
 
+// eslint-disable-next-line react/display-name
 const Thumbnail = forwardRef(({ result }, ref) => {
   const base_url = "https://image.tmdb.org/t/p/original";
 
