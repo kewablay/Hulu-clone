@@ -6,7 +6,7 @@ import requests from "../utils/requests";
 
 export default function Home({ results }) {
   // console.log(process.env.API_KEY);
-  console.log(results);
+  // console.log(results);
   return (
     <div className="2xl:container mx-auto ">
       <Head>

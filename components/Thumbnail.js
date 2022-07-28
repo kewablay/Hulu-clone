@@ -1,7 +1,6 @@
 import { ThumbUpIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 import { forwardRef } from "react";
-import FlipMove from "react-flip-move";
 
 const Thumbnail = forwardRef(({ result }, ref) => {
   const base_url = "https://image.tmdb.org/t/p/original";
@@ -17,6 +16,7 @@ const Thumbnail = forwardRef(({ result }, ref) => {
         width={1920}
         height={1080}
         className="rounded-xl"
+        alt=""
       />
       <div className="p-2">
         <h2 className="text-2xl transition-all duration-100 ease-in-out group-hover:font-bold">
