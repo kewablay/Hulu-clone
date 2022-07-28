@@ -8,7 +8,7 @@ function Nav() {
 
   return (
     <nav className="relative">
-      <div className="flex px-0 whitespace-nowrap text-lg overflow-x-scroll overflow-y-hidden  scrollbar-hide sm:px-10 sm:text-xl h-auto">
+      <div className="flex px-0 whitespace-nowrap text-lg overflow-x-scroll overflow-y-hidden  scrollbar-hide sm:mx-10 sm:text-xl h-auto">
         {Object.entries(requests).map(([key, { title, url }]) => (
           <p
             key={key}
