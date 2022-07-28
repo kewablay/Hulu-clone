@@ -1,11 +1,16 @@
 import { ThumbUpIcon } from "@heroicons/react/outline";
 import Image from "next/image";
+import { forwardRef } from "react";
+import FlipMove from "react-flip-move";
 
-function Thumbnail({ result }) {
+const Thumbnail = forwardRef(({ result }, ref) => {
   const base_url = "https://image.tmdb.org/t/p/original";
 
   return (
-    <div className="group p-4 md:p-5 sm:hover:scale-105  z-500 transition duration-100  mb-3">
+    <div
+      ref={ref}
+      className="group p-4 md:p-5 sm:hover:scale-105  z-500 transition duration-100  mb-3"
+    >
       <Image
         src={`${base_url}${result.backdrop_path}`}
         layout="responsive"
@@ -26,6 +31,6 @@ function Thumbnail({ result }) {
       </div>
     </div>
   );
-}
+});
 
 export default Thumbnail;
